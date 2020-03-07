@@ -1,0 +1,73 @@
+*body {
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 214, 214);
+    box-shadow: black 1px 2px 3px; 
+    width: 100vw;
+}
+
+#navbarR {
+    display: none;
+}
+
+#fotoFixa{
+    position: relative;
+    justify-content: start;
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+   
+}
+.Rota{
+color: grey;
+margin-top: 20px;
+
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgb(161, 157, 157);
+    opacity: 0.1;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#apresentacao{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#textoSobre{
+    margin-top: 30px;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 10px;
+    
+    }
+#tituloApresentacao{
+    margin: 20px;
+    font-size: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .login,
+.carrinho {
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 5vh;
+    right: 10px;
+}
+}

@@ -1,0 +1,137 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/wig.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Wig's House - Contato</title>
+</head>
+
+<div class="container-fluid">
+
+  <div id="form1" class="row">
+
+
+    <div class="col-12">
+      <header class="bg-info">
+        <a routerLink="/"><img class="mx-auto" src="../../../assets/images/logo.png" alt="Logo"
+            style=" display: block; width: 400px"></a>
+      </header>
+    </div>
+
+    <div class="col-md-6">
+
+      <form id="formulario" class="">
+
+        <div id="texto" class="">
+          <div class="p-2">
+
+            <div class="form-group">
+              <div class="enviemsg">
+                <strong>Envie uma Mensagem</strong>
+                <img src="images/enviar (1).png" alt="" width="30px">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="nomeUsuário">Nome Completo:</label>
+              <input id="nome" class="form-control" type="text" id="validationTextarea" name="nomeUsuario"
+                placeholder="Digite nome completo">
+            </div>
+
+            <div class="form-group">
+              <label for="telusuario">Seu Telefone</label>
+              <input class="form-control" type="text" id="validationTextarea" type="text" name="telusuario"
+                placeholder="(00) 0 0000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de email</label>
+              <input class="form-control" type="text" id="validationTextarea" placeholder="nome@exemplo.com">
+            </div>
+
+          </div>
+          <div>
+            <label for="exampleFormControlInput1">Escreva sua Mensagem </label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Escreva aqui sua mensagem"
+              required> Escreva sua Mensagem</textarea>
+            <div class="invalid-feedback">
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto da mensagem :</label>
+              <select id="assunto" class="custom-select" required>
+                <option value="">Selecione Mensagem</option>
+                <option value="1"> Contato</option>
+                <option value="2"> Trabalhe conosco</option>
+                <option value="3"> Reclamações e sugestões</option>
+              </select>
+              <div class="invalid-feedback"></div>
+            </div>
+
+
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">Receber promoções via
+                e-mail?</label>
+              <div class="invalid-feedback">Receber newsletter semanal.</div>
+            </div>
+            <div id="btn">
+              <button class="btn btn-lg btn-info btn-block" type="submit">Enviar mensagem</button>
+              <p class="mt-5 mb-3 text-muted"></p>
+            </div>
+
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+
+
+    <div id="formulario2" class="col-md-6">
+      <div class="p-2 mb-4 text-light">
+        <div class="enviemsg">
+          <strong>Contato</strong>
+          <img src="images/reclamar.png" alt="" width="30px">
+        </div>
+      </div>
+      <div id="redes" class="jumbotron form-group">
+        <div>
+          <p> E-mail: Wigs-house@gmail.com</p>
+          <p> Televendas (11) 3746-6913</p>
+          <p> SAC (11) 0800 777 700 </p>
+          <p> Endereço Central: </p>
+          <p> Redes Sociais: </p>
+          <a href="https://facebook.com"><img id="imgredes" src="../../../assets/images/facebook.png" width="30px"></a>
+          <a href="https://instagram.com"><img id="imgredes" src="../../../assets/images/instagram-esbocado.png" alt=""
+              width="30px"></a>
+          <a href="https://whatsapp.com"><img id="imgredes" src="../../../assets/images/whatsapp.png" alt=""
+              width="30px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="bg-info text-light">
+  <div class="container-fluid d-flex">
+    <div id="foot" class="row col-6">
+      <div class="btn-group" role="group">
+        <strong class="mr-2">Mapa do Site: </strong>
+        <button class="btn-primary"> <a href="contato.html" class="text-light m-3">Contato</a></button>
+        <button class="btn-primary"> <a href="cadastre.html" class="text-light m-3">Cadastrar</a></button>
+        <button class="btn-primary"> <a href="index.html" class="text-light m-3">Login</a></button>
+        <button class="btn-primary"> <a href="#" class="text-light m-3">Quem somos</a></button>
+      </div>
+    </div>
+    <div id="foot" class="row col-6">
+      <strong class="mr-2">Nos siga nas redes sociais: </strong>
+      <img class="LogoRS mr-2 ml-2" src="../../../assets/images/instagram-esbocado.png" width="30" height="30"
+        alt="Instagram Wig's">
+      <img class="LogoRS mr-2" src="../../../assets/images/facebook.png" width="30" height="30" alt="Facebook Wig's">
+      <img class="LogoRS mr-2" src="../../../assets/images/whatsapp.png" width="30" height="30" alt="Whatsapp Wig's">
+    </div>
+  </div>
+</footer>

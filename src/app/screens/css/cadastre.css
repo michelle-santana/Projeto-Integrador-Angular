@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: inline-block;
+    text-align: center;
+}
+
+#LogoPrincipal{
+    align-items: flex-end;
+    margin-top: 40px;
+    margin-left: 130px;
+    width: 30vw;
+    height: 15vh;
+
+}
+.button{
+    background-color:#006172;
+    color: #fff;
+    border: none;
+    height: 31px;
+    cursor: pointer;
+}
+#form-signin{
+    align-items: center;
+    margin-left: 120px;
+}
+#fotoFixa{
+    background-image: url(/screens/images/tentativa2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:50vw;
+    height:95vh;
+}
+input {
+    margin: 5px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    #fotoFixa {
+        width: 100vw;
+        height: 50vh;
+    }
+}

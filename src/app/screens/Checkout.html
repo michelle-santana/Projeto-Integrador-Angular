@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wig's House - Carrinho</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-info">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="LogoPrincipal" width="150px">
+            </a>
+            <div class="continuar-cp">
+                <div>
+                    <a href="produtos.html"><button class="btn btn-outline-secondary" type="submit">Continuar comprando</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <form class="row dados center" id="checkout" method="POST">
+            <div class="col-md-6">
+                <header class="card-header bg-info text-light">
+                    <img src="images/caixa-de-correio.png" alt="" srcset="" width="25" height="25">
+                    <t class="p-4 font-weight-bolder">Dados de Entrega</t>
+                </header>
+                <div class="border border-top-0 mt-2 p-4">
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="hidden" id="cep-valido" value="false">
+                        <input class="form-control" type="text" name="cpf" placeholder="Digite seu CEP..." id="cep">
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input class="form-control" type="text" name="endereco" placeholder="Endereço..."
+                            id="endereco" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero-res">Numero:</label>
+                        <input class="form-control" type="number" name="numero-res" placeholder="Digite o numero..."
+                            id="numero-res">
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento:</label>
+                        <input class="form-control" type="text" name="complemento"
+                            placeholder="Digite um complemento..." id="complemento">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input class="form-control" type="text" name="bairro" placeholder="Bairro..."
+                            id="bairro" disabled>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="cidade">Cidade:</label>
+                            <input class="form-control" type="text" name="cidade" placeholder="Cidade..." id="cidade" disabled>
+                        </div>
+                        <div class="col-6">
+                            <label for="sel-estado">Estado:</label>
+                            <select class="form-control" name="estado" id="sel-estado" disabled>
+                                <option value="" selected>Estado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="forma-envio">Forma de envio:</label>
+                        <select class="form-control" name="forma-envio" id="sel-forma-envio">
+                            <option value="" disabled selected>Forma de envio</option>
+                            <option value="50">Rapida - R$ 50,00</option>
+                            <option value="20">Normal - R$ 20,00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <header class="card-header bg-info text-light">
+                    <img src="images/doacao.svg" alt="" srcset="" width="25" height="25">
+                    <t class="p-4 font-weight-bolder">Dados de Pagamento</t>
+                </header>
+                <div class="border mt-2 p-4">
+                    <table class="table table-striped">
+                        <thead class="">
+                            <tr>
+                                <th scope="col">Produtos</th>
+                                <th scope="col">Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Peruca 1</th>
+                                <td>R$ 40,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Peruca 2</th>
+                                <td>R$ 100,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Peruca 3</th>
+                                <td>R$ 50,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5 class="p-2">Total R$ </h5>
+                </div>
+                <div class="border border-top-0 mt-2 p-4">
+                    <div class="form-group">
+                        <label for="numero-cartao">Numero do cartão:</label>
+                        <input class="form-control" type="text" name="numero-cartao"
+                            placeholder="Digite o numero do cartão..." id="numero-cartao">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-9">
+                            <label for="data-validade">Data validade:</label>
+                            <input class="form-control" type="month" class="datepicker" name="data-validade" 
+                                id="data-validade">
+                        </div>
+                        <div class="col-3">
+                            <label for="cod-cartao">CVV:</label>
+                            <input class="form-control" type="text" name="cod-cartao" placeholder="..." id="cod-cartao">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-titular">Nome titular:</label>
+                        <input class="form-control" type="text" name="nome-titular"
+                            placeholder="Digite um complemento..." id="nome-titular">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-cpf">CPF do titular:</label>
+                        <input class="form-control" type="text" name="input-cpf"
+                            placeholder="Digite o CPF do titular..." id="input-cpf">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-success btn-block" id="btn-finalizar">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+    <footer class="bg-info text-light">
+        <div class="container-fluid d-flex">
+            <div id="foot" class="row col-6">
+                <div class="btn-group" role="group">
+                    <strong class="mr-2">Mapa do Site: </strong>
+                    <button class="btn-primary"> <a href="contato.html" class="text-light m-3">Contato</a></button>
+                    <button class="btn-primary"> <a href="cadastre.html" class="text-light m-3">Cadastrar</a></button>
+                    <button class="btn-primary"> <a href="index.html" class="text-light m-3">Login</a></button>
+                    <button class="btn-primary"> <a href="#" class="text-light m-3">Quem somos</a></button>
+                </div>
+            </div>
+            <div id="foot" class="row col-6">
+                <strong class="mr-2">Nos siga nas redes sociais: </strong>
+                <img class="LogoRS mr-2 ml-2" src="../screens/images/instagram-esbocado.png" width="30" height="30"
+                        alt="Instagram Wig's">
+                <img class="LogoRS mr-2" src="images/facebook.png" width="30" height="30" alt="Facebook Wig's">
+                <img class="LogoRS mr-2" src="images/whatsapp.png" width="30" height="30" alt="Whatsapp Wig's">
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="modal-finalizar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="inserir-modal">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="js/validarCpf.js"></script>
+    <script src="js/inserirHtml.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

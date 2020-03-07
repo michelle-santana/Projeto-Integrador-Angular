@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="img/logoicon.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Wig's House</title>
+</head>
+
+<body>
+    <main class="container-fluid">
+        <header>
+            <!-- Imagem do Logo -->
+            <div class="row container">
+                <div class="col-xs-12">
+                    <div class="logo">
+                        <img id="exemplo" class="img-responsive" src="images/logo.png" alt="logo" title="Wig's House">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Imagens de Login/Carrinho -->
+            <div class="row container-fluid">
+                <div class="col-xs-6">
+                    <a href="index.html">
+                        <img class="login" src="img/images.png" alt="login">
+                        <p id="login" class="caption">Login</p>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="Checkout.html">
+                        <img class="carrinho" src="img/carrinho-de-compras.png" alt="carrinho">
+                        <p id="carrinho" class="caption">Carrinho</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Navbar do site em telas grandes -->
+            <div id="navbar" class="row container-fluid bg-info">
+                <ul class="nav justify-content-end col-xs-12">
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Lisos</button>
+                    </li>
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Cacheados</button>
+                    </li>
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Crespos</button>
+                    </li>
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Ondulados</button>
+                    </li>
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Naturais</button>
+                    </li>
+                    <li class="nav-item col-lg-2 col-md-3 col-xs-12">
+                        <button class="botao btn btn-basic nav-link" href="#">Cosplay</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Navbar que só aparece em modo responsivo -->
+            <div id="navbarR" class="row container-fluid">
+                <nav id="menu" class="navbar navbar-expand-md bg-light navbar-light">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav col-md-12 col-xs-12">
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Lisos</button>
+                            </li>
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Cacheados</button>
+                            </li>
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Crespos</button>
+                            </li>
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Ondulados</button>
+                            </li>
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Naturais</button>
+                            </li>
+                            <li class="nav-item col-lg-2 col-xs-12">
+                                <button class="botao btn btn-basic nav-link" href="#">Cosplay</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Carrossel com banners -->
+        <div class="container mt-3">
+            <div class="row col-12 justify-content-center">
+                <div id="demo" class="carousel slide " data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div id="carro1" class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-thumbnail" src="img/banner 2.jpg" alt="Banner wigs 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-thumbnail" src="img/lwig7.jpg" alt="banner wigs 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-thumbnail" src="img/wigs_2018_bannerw.png" alt="banner wigs 3">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section id="desc" class="container-fluid">
+            <div class="row justify-content-center bg-info">
+                <em> Confira nossos produtos mais vendidos :</em>
+            </div>
+        </section>
+
+        <!-- Carrossel com Produtos -->
+        <div id="carro2" class="container mt-3">
+            <div class="row col-12 justify-content-center">
+                <div id="produtos" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#produtos" data-slide-to="0" class="active"></li>
+                        <li data-target="#produtos" data-slide-to="1"></li>
+                        <li data-target="#produtos" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="../screens/img/produtos - perucas/000 - frente.jpg"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca Ondulada Loiro Acizentado</h4>
+                                                <p class="card-text">R$ 199,90</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top"
+                                                src="../screens/img/produtos - perucas/010-frente.jpg" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca Longa Lisa Ruivo Acobreado</h4>
+                                                <p class="card-text">R$ 199,90</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/produtos - perucas/008-frente.jpg"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca Longa Ondulada Loiro</h4>
+                                                <p class="card-text">R$ 199,90</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="img/produtos - perucas/003 - frente.jpg"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca Longa cacheada preta</h4>
+                                                <p class="card-text">R$ 199,90</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/logo.png" alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Peruca ...</h4>
+                                                <p class="card-text">Descrição Resumida</p>
+                                                <a href="#" class="btn btn-info">Ver Produto</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#produtos" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#produtos" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="p-8">
+                <a href="produtos.html"><button id="mais" type="submit" class="btn btn-info">Ver Todos</button></a>
+            </div>
+        </div>
+
+        <!-- Produtos que aparecem em modo responsivo -->
+        <div id="contresponsive" class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <img class="card-img-top" src="images/logo.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Peruca ...</h4>
+                            <p class="card-text">Descrição Resumida</p>
+                            <a href="#" class="btn btn-info">Ver Produto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="card">
+                        <img class="card-img-top" src="images/logo.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Peruca ...</h4>
+                            <p class="card-text">Descrição Resumida</p>
+                            <a href="#" class="btn btn-info">Ver Produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <div id="inst" class="container-fluid m-3">
+        <div class="row">
+            <div class="jumbotron col-4">
+                <strong>Doe seu Cabelo:</strong><br>
+                <em>Seu Cabelo pode fazer uma criança sorrir .</em>
+
+                <button class="btn btn-info text-light" type="submit">Saiba mais !</button>
+            </div>
+            <div class="col-8">
+                <img class="img-thumbnail" src="img/banner_site_HGWA_doe_cabelo.png" alt="Doar" title="Doe seu cabelo">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-info text-light">
+        <div class="container-fluid d-flex">
+            <div class="row col-6">
+                <div id="foot" class="btn-group" role="group">
+                    <strong class="mr-2">Mapa do Site</strong>
+                    <button class="btn-primary"> <a href="contato.html" class="text-light m-3">Contato</a></button>
+                    <button class="btn-primary"> <a href="cadastre.html" class="text-light m-3">Cadastrar</a></button>
+                    <button class="btn-primary"> <a href="index.html" class="text-light m-3">Login</a></button>
+                    <button class="btn-primary"> <a href="#" class="text-light m-3">Quem somos</a></button>
+                </div>
+            </div>
+            <div id="foot" class="row col-6">
+                <strong class="mr-2">Nos siga nas redes sociais</strong>
+                <img class="LogoRS mr-2 ml-2" src="../screens/images/instagram-esbocado.png" width="30" height="30"
+                        alt="Instagram Wig's">
+                <img class="LogoRS mr-2" src="images/facebook.png" width="30" height="30" alt="Facebook Wig's">
+                <img class="LogoRS mr-2" src="images/whatsapp.png" width="30" height="30" alt="Whatsapp Wig's">
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
